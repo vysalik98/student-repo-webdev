@@ -5,14 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/03-form.css" /> -->
   </head>
   <body>
     <main>
       <form action="">
-        <h1>Contact Form</h1>
-        <!-- Add your code here -->
+        <h1>Registration Form</h1>
+
+        <div>
+          <label for="username"> Username: </label>
+          <input type="text" id="username" name="username" required />
+          <br /><br />
+        </div>
+
+        <div>
+          <label for="email"> Email:</label>
+          <input type="text" id="email" name="email" required />
+          <br /><br />
+        </div>
+
+        <div>
+          <label for="password"> Password: </label>
+          <input type="password" id="password" name="password" required />
+          <br /><br />
+        </div>
+
+        <div>
+          <fieldset>
+            <legend>Would you like to sign up for the newsletter?</legend>
+            <br />
+
+            <input type="radio" id="Yes,sign me up" name="newsletter"  value="Yes,sign me up" />
+            <label for="Yes,sign me up"> Yes,sign me up </label> &nbsp
+
+            <input type="radio" id="No,Thankyou" name="newsletter"  value="No,Thankyou" />
+            <label for="No,Thankyou"> No,Thankyou </label>
+          </fieldset>
+          <br />  
+        </div>
+
+        <div>
+          <label for="Date"> Date: </label>
+          <input type="date" id="date" name="Date" /> <br />
+          <br />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
