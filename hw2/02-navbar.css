@@ -1,27 +1,16 @@
+/* The class names and style declarations below were added to help you get started.
+If you would prefer, you can delete them and use your own classes and style declarations. */
+
 body {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.nav-list {
 }
 
-li {
-  float: left;
-}
-
-a {
-  display: block;
+.list-item {
   background-color: var(--green);
-  color: #ffffff;
-  padding: 24px 24px;
-  text-decoration: none;
-  transition-duration: 0.4s;
 }
 
-a:hover {
-  color: #080808;
-  background-color: #ffa500;
+.nav-link {
 }
