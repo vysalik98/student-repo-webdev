@@ -1,17 +1,121 @@
-/* The class names and style declarations below were added to help you get started.
-If you would prefer, you can delete them and use your own classes and style declarations. */
-
-.form {
+form {
+  border: 1px solid#cccccc;
+  box-sizing: border-box;
+  width: 40;
+  margin: 7em auto;
+  margin-top: 30px;
+  height: 600px;
+  padding-left: 16px;
+  border-radius: 10px;
 }
 
-.form-element {
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 25px;
 }
 
-.btn {
+.username {
+  padding-right: 5px;
+  font-weight: bold;
 }
 
-.btn-primary {
+.email {
+  padding-right: 48px;
+  font-weight: bold;
 }
 
-.btn-secondary {
+.password {
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 68%;
+  height: 26px;
+  border-radius: 0px;
+  border: 1.5px solid #cccccc;
+  margin-top: auto;
+}
+
+fieldset {
+  border: 0px none;
+  font-weight: bold;
+  margin: 0px;
+  padding: 1px;
+  margin-top: 30px;
+}
+
+.radiobtn {
+  display: block;
+  float: left;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  width: 13px;
+  height: 13px;
+}
+
+.newsletter {
+  display: block;
+  font-weight: lighter;
+  margin-left: 50px;
+}
+
+label.date {
+  padding-right: 50px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 1px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+input.date {
+  width: 68%;
+  height: 26px;
+  border-radius: 0px;
+  border: 1.5px solid #cccccc;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 4px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  color: var(--white);
+  float: left;
+  width: 46.5%;
+  height: 45%;
+  margin-right: 4px;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: medium;
+}
+
+.primary:hover {
+  color: #080808;
+  background-color: #ffa500;
+  border-radius: 2px;
+  border-color: #080808;
+  border-style: solid;
+}
+
+.secondary {
+  background-color: #ffffff;
+  border: 1px solid var(--green);
+  color: var(--green);
+  width: 46.5%;
+  height: 45%;
+  margin-left: 2px;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: medium;
+}
+
+.main {
+  margin-bottom: 30px;
 }
