@@ -10,11 +10,70 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="hw-styles.css" />
+    <!-- <link rel="stylesheet" href="hw-styles.css" /> -->
   </head>
-  <body>
+  <body class="bg-dark">
     <main>
-      <!-- Add your code here -->
+      <div class="mt-5 mb-5">
+        <form class="bg-light mx-auto px-3 form-horizontal">
+          <h1 class="text-center bg-light pt-3">CONTACT FORM</h1>
+          <div class="row mb-3 mt-3">
+            <div class="col-sm-4">
+              <label for="username">Username:</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="text" name="username" id="username" class="form-control"/>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4">
+              <label class="ctrl-label" for="Email">Email:</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="email" name="email" id="Email" class="form-control"/>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4">
+              <label for="password">Password:</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="password" name="password" id="password" class="form-control"/>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form-group">
+              <fieldset class="row">
+                <legend class="col-form-label">
+                  Would you like to sign up for the newsletter?
+                </legend>
+                <div class="">
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" name="radio" id="radiobtn1"/>
+                    <label for="radiobtn1" class="form-check-label"> Yes, sign me up </label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" name="radio" id="radiobtn2"/>
+                    <label for="radiobtn2" class="form-check-label"> No, thank you</label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="date">Date:</label>
+            </div>
+            <div class="col-sm-8">
+              <input type="date" class="form-control" name="date" id="date" />
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn mb-3 btn-primary">Submit</button>
+            <button type="reset" class="btn mb-3 btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
