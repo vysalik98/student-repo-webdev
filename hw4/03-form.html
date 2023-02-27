@@ -5,12 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <script defer src="05-form.js"></script>
+    <script defer src="03-form.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
   </head>
   <body>
     <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
+      <form class="form" action="#submit">
+        <h1>Registration Form</h1>
+
+        <div class="main">
+          <label for="username" class="username"> Username: </label>
+          <input type="text" id="username" name="Username" />
+        </div>
+
+        <div class="main">
+          <label for="email" class="email"> Email:</label>
+          <input type="email" id="email" name="Email" />
+        </div>
+
+        <div class="main">
+          <label for="password" class="password"> Password: </label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <fieldset>
+          <legend>Would you like to sign up for the newsletter?</legend>
+          <input
+            type="radio"
+            id="Yes"
+            class="radiobtn"
+            name="Newsletter"
+            value="Yes"
+          />
+          <label for="Yes" class="newsletter"> Yes, sign me up </label>
+
+          <input
+            type="radio"
+            id="No"
+            class="radiobtn"
+            name="Newsletter"
+            value="No"
+          />
+          <label for="No" class="newsletter"> No, Thankyou </label>
+        </fieldset>
+
+        <div class="main">
+          <label for="date" class="date"> Date:</label>
+          <input type="date" class="date" id="date" name="Date" />
+        </div>
+
+        <div class="main">
+          <input type="submit" class="primary" value="Submit" />
+          <input type="reset" class="secondary" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
