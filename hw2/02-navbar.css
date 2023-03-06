@@ -2,17 +2,17 @@ body {
   margin: 0;
 }
 
-ul {
+.unorderedlist {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+.list {
   float: left;
 }
 
-a {
+.link {
   display: block;
   background-color: var(--green);
   color: #ffffff;
@@ -21,7 +21,7 @@ a {
   transition-duration: 0.4s;
 }
 
-a:hover {
+.link:hover {
   color: #080808;
   background-color: #ffa500;
 }

@@ -1,5 +1,5 @@
-form {
-  border: 1px solid#cccccc;
+.myform {
+  border: 1px solid var(--gray3);
   box-sizing: border-box;
   width: 40;
   margin: 7em auto;
@@ -9,24 +9,27 @@ form {
   border-radius: 10px;
 }
 
-h1 {
+.heading {
   text-align: center;
   text-transform: uppercase;
   padding-top: 25px;
 }
 
 .username {
-  padding-right: 5px;
+  display: inline-block;
+  width: 27%;
   font-weight: bold;
 }
 
 .email {
-  padding-right: 48px;
+  display: inline-block;
+  width: 27%;
   font-weight: bold;
 }
 
 .password {
-  padding-right: 8px;
+  display: inline-block;
+  width: 27%;
   font-weight: bold;
 }
 
@@ -34,11 +37,11 @@ input {
   width: 68%;
   height: 26px;
   border-radius: 0px;
-  border: 1.5px solid #cccccc;
+  border: 1.5px solid var(--gray3);
   margin-top: auto;
 }
 
-fieldset {
+.field {
   border: 0px none;
   font-weight: bold;
   margin: 0px;
@@ -71,11 +74,12 @@ label.date {
   font-weight: bold;
   margin-bottom: 8px;
 }
+
 input.date {
   width: 68%;
   height: 26px;
   border-radius: 0px;
-  border: 1.5px solid #cccccc;
+  border: 1.5px solid var(--gray3);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   padding-left: 4px;
   margin-top: 25px;
@@ -83,37 +87,33 @@ input.date {
   font-weight: bold;
 }
 
-.primary {
-  background-color: var(--green);
+.btn {
   border: 1px solid var(--green);
-  color: var(--white);
-  float: left;
   width: 46.5%;
-  height: 45%;
-  margin-right: 4px;
+  height: 46%;
   padding: 10px;
   border-radius: 3px;
-  font-size: medium;
+}
+
+.primary {
+  background-color: var(--green);
+  color: var(--white);
+  float: left;
+  margin-right: 4px;
 }
 
 .primary:hover {
-  color: #080808;
-  background-color: #ffa500;
+  color: var(--black);
+  background-color: var(--orange);
   border-radius: 2px;
-  border-color: #080808;
+  border-color: var(--black);
   border-style: solid;
 }
 
 .secondary {
-  background-color: #ffffff;
-  border: 1px solid var(--green);
+  background-color: var(--white);
   color: var(--green);
-  width: 46.5%;
-  height: 45%;
   margin-left: 2px;
-  padding: 10px;
-  border-radius: 3px;
-  font-size: medium;
 }
 
 .main {

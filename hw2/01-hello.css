@@ -1,25 +1,25 @@
-div {
+body {
+  font-size: 1em;
+}
+
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-img {
+.image {
   max-width: 100%;
   display: block;
   margin: 50px auto 16px auto;
   border-radius: 50%;
 }
 
-p::first-line {
+.paragraph::first-line {
   font-size: 1.1em;
   font-weight: bold;
 }
 
-p {
+.paragraph {
   margin: 0% 29%;
-}
-
-body {
-  font-size: 1em;
 }

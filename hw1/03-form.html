@@ -10,42 +10,53 @@
   </head>
   <body>
     <main>
-      <form action="/submit">
-        <h1>Registration Form</h1>
+      <form class="myform" action="/submit">
+        <h1 class="heading">Registration Form</h1>
 
         <div class="main">
-          <label for="username" class ="username"> Username: </label>
+          <label for="username" class="username"> Username: </label>
           <input type="text" id="username" name="username" required />
         </div>
 
         <div class="main">
-          <label for="email" class ="email"> Email:</label>
+          <label for="email" class="email"> Email:</label>
           <input type="email" id="email" name="email" required />
         </div>
 
         <div class="main">
-          <label for="password" class = password> Password: </label>
+          <label for="password" class="password"> Password: </label>
           <input type="password" id="password" name="password" required />
-
-          <fieldset>
-          <legend> 
-            Would you like to sign up for the newsletter? 
-          </legend>
-            <input type="radio" id="Yes" class="radiobtn" name="newsletter" value="Yes,sign me up" />
-            <label for="Yes" class = "newsletter"> Yes, sign me up </label>
-
-            <input type="radio" id="No" class="radiobtn" name="newsletter" value="No,Thankyou" />
-            <label for="No" class = "newsletter"> No, Thankyou </label>
-          </fieldset>
-
-        <div class="main">
-            <label for="date" class ="date"> Date:</label>
-          <input type="date" class = "date" id="date" name="Date" /> 
         </div>
-    
+
+        <fieldset class="field">
+          <legend>Would you like to sign up for the newsletter?</legend>
+          <input
+            type="radio"
+            id="Yes"
+            class="radiobtn"
+            name="newsletter"
+            value="Yes,sign me up"
+          />
+          <label for="Yes" class="newsletter"> Yes, sign me up </label>
+
+          <input
+            type="radio"
+            id="No"
+            class="radiobtn"
+            name="newsletter"
+            value="No,Thankyou"
+          />
+          <label for="No" class="newsletter"> No, Thankyou </label>
+        </fieldset>
+
         <div class="main">
-          <input type="submit" class="primary" value="Submit" /> 
-          <input type="reset" class="secondary" value="Reset" />
+          <label for="date" class="date"> Date:</label>
+          <input type="date" class="date" id="date" name="Date" />
+        </div>
+
+        <div class="main">
+          <input type="submit" class="btn primary" value="Submit" />
+          <input type="reset" class="btn secondary" value="Reset" />
         </div>
       </form>
     </main>
