@@ -1,13 +1,12 @@
-.drinks {
+#results {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.drink {
+.drinks {
   width: 200px;
-  margin: 8px;
-  display: flex;
+  margin: 10px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -16,31 +15,29 @@
 
 .figure {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.drink:hover {
+.drinks:hover {
   border: 0.5rem solid var(--purple);
   background-color: var(--purple);
   color: var(--white);
 }
 
 .drinkname {
-  align-items: center;
-  margin-bottom: 25px;
-  flex-wrap: wrap;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .drink {
+  .drinks {
     width: 24%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .drink {
+  .drinks {
     width: 38%;
   }
   .drinkname {
@@ -50,7 +47,7 @@
 }
 
 @media screen and (max-width: 414px) {
-  .drink {
+  .drinks {
     width: 80%;
   }
 }

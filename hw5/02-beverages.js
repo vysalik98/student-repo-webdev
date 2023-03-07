@@ -8,6 +8,7 @@ const addDrinkToDOM = (item) => {
   let div = document.createElement("div");
   div.className = "drinks";
   app.appendChild(div);
+
   let drink = document.createElement("div");
   drink.className = "drink";
 
@@ -21,7 +22,7 @@ const addDrinkToDOM = (item) => {
   drinkname.className = "drinkname";
 
   drink.append(image, drinkname);
-  app.querySelector(".drinks").appendChild(drink);
+  div.append(drink);
 };
 
 const fetchData = async (url) => {
